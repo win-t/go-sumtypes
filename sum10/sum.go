@@ -2,16 +2,14 @@
 
 package sum10
 
+import "reflect"
+
 type Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9 any] struct {
 	v any
 }
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set0(v T0) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New0(v T0) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As0() (T0, bool) {
@@ -23,10 +21,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set1(v T1) {
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New1(v T1) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As1() (T1, bool) {
 	v, ok := s.v.(T1)
 	return v, ok
@@ -34,10 +28,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As1() (T1, bool) {
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set2(v T2) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New2(v T2) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As2() (T2, bool) {
@@ -49,10 +39,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set3(v T3) {
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New3(v T3) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As3() (T3, bool) {
 	v, ok := s.v.(T3)
 	return v, ok
@@ -60,10 +46,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As3() (T3, bool) {
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set4(v T4) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New4(v T4) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As4() (T4, bool) {
@@ -75,10 +57,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set5(v T5) {
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New5(v T5) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As5() (T5, bool) {
 	v, ok := s.v.(T5)
 	return v, ok
@@ -86,10 +64,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As5() (T5, bool) {
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set6(v T6) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New6(v T6) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As6() (T6, bool) {
@@ -101,10 +75,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set7(v T7) {
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New7(v T7) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As7() (T7, bool) {
 	v, ok := s.v.(T7)
 	return v, ok
@@ -112,10 +82,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As7() (T7, bool) {
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set8(v T8) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New8(v T8) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As8() (T8, bool) {
@@ -127,40 +93,62 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Set9(v T9) {
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) New9(v T9) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) As9() (T9, bool) {
 	v, ok := s.v.(T9)
 	return v, ok
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Underlying() any {
-	return s.v
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]) Case(f0 func(T0), f1 func(T1), f2 func(T2), f3 func(T3), f4 func(T4), f5 func(T5), f6 func(T6), f7 func(T7), f8 func(T8), f9 func(T9)) {
 	switch v := s.v.(type) {
 	case T0:
+		if f0 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f0(v)
 	case T1:
+		if f1 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f1(v)
 	case T2:
+		if f2 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f2(v)
 	case T3:
+		if f3 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f3(v)
 	case T4:
+		if f4 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f4(v)
 	case T5:
+		if f5 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f5(v)
 	case T6:
+		if f6 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f6(v)
 	case T7:
+		if f7 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f7(v)
 	case T8:
+		if f8 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f8(v)
 	case T9:
+		if f9 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f9(v)
 	default:
 		panic("called Case on an invalid value")

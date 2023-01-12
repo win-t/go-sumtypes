@@ -2,16 +2,14 @@
 
 package sum14
 
+import "reflect"
+
 type Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13 any] struct {
 	v any
 }
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set0(v T0) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New0(v T0) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As0() (T0, bool) {
@@ -23,10 +21,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set1(
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New1(v T1) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As1() (T1, bool) {
 	v, ok := s.v.(T1)
 	return v, ok
@@ -34,10 +28,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As1() 
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set2(v T2) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New2(v T2) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As2() (T2, bool) {
@@ -49,10 +39,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set3(
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New3(v T3) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As3() (T3, bool) {
 	v, ok := s.v.(T3)
 	return v, ok
@@ -60,10 +46,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As3() 
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set4(v T4) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New4(v T4) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As4() (T4, bool) {
@@ -75,10 +57,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set5(
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New5(v T5) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As5() (T5, bool) {
 	v, ok := s.v.(T5)
 	return v, ok
@@ -86,10 +64,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As5() 
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set6(v T6) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New6(v T6) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As6() (T6, bool) {
@@ -101,10 +75,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set7(
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New7(v T7) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As7() (T7, bool) {
 	v, ok := s.v.(T7)
 	return v, ok
@@ -112,10 +82,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As7() 
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set8(v T8) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New8(v T8) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As8() (T8, bool) {
@@ -127,10 +93,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set9(
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New9(v T9) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As9() (T9, bool) {
 	v, ok := s.v.(T9)
 	return v, ok
@@ -138,10 +100,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As9() 
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set10(v T10) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New10(v T10) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As10() (T10, bool) {
@@ -153,10 +111,6 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set11
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New11(v T11) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As11() (T11, bool) {
 	v, ok := s.v.(T11)
 	return v, ok
@@ -164,10 +118,6 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As11()
 
 func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set12(v T12) {
 	s.v = v
-}
-
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New12(v T12) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
 }
 
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As12() (T12, bool) {
@@ -179,48 +129,82 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Set13
 	s.v = v
 }
 
-func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) New13(v T13) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
-	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]{v}
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) As13() (T13, bool) {
 	v, ok := s.v.(T13)
 	return v, ok
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Underlying() any {
-	return s.v
-}
-
 func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Case(f0 func(T0), f1 func(T1), f2 func(T2), f3 func(T3), f4 func(T4), f5 func(T5), f6 func(T6), f7 func(T7), f8 func(T8), f9 func(T9), f10 func(T10), f11 func(T11), f12 func(T12), f13 func(T13)) {
 	switch v := s.v.(type) {
 	case T0:
+		if f0 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f0(v)
 	case T1:
+		if f1 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f1(v)
 	case T2:
+		if f2 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f2(v)
 	case T3:
+		if f3 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f3(v)
 	case T4:
+		if f4 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f4(v)
 	case T5:
+		if f5 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f5(v)
 	case T6:
+		if f6 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f6(v)
 	case T7:
+		if f7 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f7(v)
 	case T8:
+		if f8 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f8(v)
 	case T9:
+		if f9 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f9(v)
 	case T10:
+		if f10 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f10(v)
 	case T11:
+		if f11 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f11(v)
 	case T12:
+		if f12 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f12(v)
 	case T13:
+		if f13 == nil {
+			panic("no handler for case " + reflect.TypeOf(v).String())
+		}
 		f13(v)
 	default:
 		panic("called Case on an invalid value")

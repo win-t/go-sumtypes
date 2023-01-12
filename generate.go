@@ -41,11 +41,11 @@ func (s *Type[` + t + `]) Set` + i + `(v T` + i + `) {
 	s.v = v
 }
 
-func (*Type[` + t + `]) New` + i + `(v T` + i + `) Type[` + t + `] {
+func (Type[` + t + `]) New` + i + `(v T` + i + `) Type[` + t + `] {
 	return Type[` + t + `]{v}
 }
 
-func (s *Type[` + t + `]) As` + i + `() (T` + i + `, bool) {
+func (s Type[` + t + `]) As` + i + `() (T` + i + `, bool) {
 	v, ok := s.v.(T` + i + `)
 	return v, ok
 }
@@ -53,7 +53,7 @@ func (s *Type[` + t + `]) As` + i + `() (T` + i + `, bool) {
 	}
 
 	ret += `
-func (s *Type[` + t + `]) Underlying() any {
+func (s Type[` + t + `]) Underlying() any {
 	return s.v
 }
 `

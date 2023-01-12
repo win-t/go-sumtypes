@@ -10,11 +10,11 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Set0(v T0) {
 	s.v = v
 }
 
-func (*Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New0(v T0) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
+func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New0(v T0) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
 	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]{v}
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As0() (T0, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As0() (T0, bool) {
 	v, ok := s.v.(T0)
 	return v, ok
 }
@@ -23,11 +23,11 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Set1(v T1) {
 	s.v = v
 }
 
-func (*Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New1(v T1) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
+func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New1(v T1) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
 	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]{v}
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As1() (T1, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As1() (T1, bool) {
 	v, ok := s.v.(T1)
 	return v, ok
 }
@@ -36,11 +36,11 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Set2(v T2) {
 	s.v = v
 }
 
-func (*Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New2(v T2) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
+func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New2(v T2) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
 	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]{v}
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As2() (T2, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As2() (T2, bool) {
 	v, ok := s.v.(T2)
 	return v, ok
 }
@@ -49,11 +49,11 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Set3(v T3) {
 	s.v = v
 }
 
-func (*Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New3(v T3) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
+func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New3(v T3) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
 	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]{v}
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As3() (T3, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As3() (T3, bool) {
 	v, ok := s.v.(T3)
 	return v, ok
 }
@@ -62,11 +62,11 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Set4(v T4) {
 	s.v = v
 }
 
-func (*Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New4(v T4) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
+func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New4(v T4) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
 	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]{v}
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As4() (T4, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As4() (T4, bool) {
 	v, ok := s.v.(T4)
 	return v, ok
 }
@@ -75,11 +75,11 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Set5(v T5) {
 	s.v = v
 }
 
-func (*Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New5(v T5) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
+func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New5(v T5) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
 	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]{v}
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As5() (T5, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As5() (T5, bool) {
 	v, ok := s.v.(T5)
 	return v, ok
 }
@@ -88,11 +88,11 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Set6(v T6) {
 	s.v = v
 }
 
-func (*Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New6(v T6) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
+func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New6(v T6) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
 	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]{v}
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As6() (T6, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As6() (T6, bool) {
 	v, ok := s.v.(T6)
 	return v, ok
 }
@@ -101,11 +101,11 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Set7(v T7) {
 	s.v = v
 }
 
-func (*Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New7(v T7) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
+func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New7(v T7) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
 	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]{v}
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As7() (T7, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As7() (T7, bool) {
 	v, ok := s.v.(T7)
 	return v, ok
 }
@@ -114,16 +114,16 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Set8(v T8) {
 	s.v = v
 }
 
-func (*Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New8(v T8) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
+func (Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) New8(v T8) Type[T0, T1, T2, T3, T4, T5, T6, T7, T8] {
 	return Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]{v}
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As8() (T8, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) As8() (T8, bool) {
 	v, ok := s.v.(T8)
 	return v, ok
 }
 
-func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Underlying() any {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8]) Underlying() any {
 	return s.v
 }
 

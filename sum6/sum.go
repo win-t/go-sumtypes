@@ -66,35 +66,39 @@ func (s Type[T0, T1, T2, T3, T4, T5]) Case(f0 func(T0), f1 func(T1), f2 func(T2)
 	switch v := s.v.(type) {
 	case T0:
 		if f0 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f0(v)
 	case T1:
 		if f1 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f1(v)
 	case T2:
 		if f2 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f2(v)
 	case T3:
 		if f3 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f3(v)
 	case T4:
 		if f4 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f4(v)
 	case T5:
 		if f5 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f5(v)
 	default:
 		panic("called Case on an invalid value")
 	}
+}
+
+func noHandler(v any) {
+	panic("no handler for case " + reflect.TypeOf(v).String())
 }

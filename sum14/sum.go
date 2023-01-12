@@ -138,75 +138,79 @@ func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]) Case(f
 	switch v := s.v.(type) {
 	case T0:
 		if f0 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f0(v)
 	case T1:
 		if f1 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f1(v)
 	case T2:
 		if f2 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f2(v)
 	case T3:
 		if f3 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f3(v)
 	case T4:
 		if f4 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f4(v)
 	case T5:
 		if f5 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f5(v)
 	case T6:
 		if f6 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f6(v)
 	case T7:
 		if f7 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f7(v)
 	case T8:
 		if f8 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f8(v)
 	case T9:
 		if f9 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f9(v)
 	case T10:
 		if f10 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f10(v)
 	case T11:
 		if f11 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f11(v)
 	case T12:
 		if f12 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f12(v)
 	case T13:
 		if f13 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f13(v)
 	default:
 		panic("called Case on an invalid value")
 	}
+}
+
+func noHandler(v any) {
+	panic("no handler for case " + reflect.TypeOf(v).String())
 }

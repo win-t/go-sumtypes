@@ -58,7 +58,7 @@ func (s Type[` + t + `]) Case(` + f + `) {
 		ret += `
 	case T` + i + `:
 		if f` + i + ` == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f` + i + `(v)`
 	}
@@ -66,6 +66,10 @@ func (s Type[` + t + `]) Case(` + f + `) {
 	default:
 		panic("called Case on an invalid value")
 	}
+}
+
+func noHandler(v any) {
+	panic("no handler for case " + reflect.TypeOf(v).String())
 }
 `
 	return ret

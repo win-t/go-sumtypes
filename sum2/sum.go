@@ -30,15 +30,19 @@ func (s Type[T0, T1]) Case(f0 func(T0), f1 func(T1)) {
 	switch v := s.v.(type) {
 	case T0:
 		if f0 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f0(v)
 	case T1:
 		if f1 == nil {
-			panic("no handler for case " + reflect.TypeOf(v).String())
+			noHandler(v)
 		}
 		f1(v)
 	default:
 		panic("called Case on an invalid value")
 	}
+}
+
+func noHandler(v any) {
+	panic("no handler for case " + reflect.TypeOf(v).String())
 }

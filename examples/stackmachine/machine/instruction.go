@@ -18,7 +18,7 @@ type Instruction struct {
 	]
 }
 
-func (e Print) AsInstruction() Instruction   { var i Instruction; i.Set0(e); return i }
-func (e PushInt) AsInstruction() Instruction { var i Instruction; i.Set1(e); return i }
-func (e Add) AsInstruction() Instruction     { var i Instruction; i.Set2(e); return i }
-func (e Exit) AsInstruction() Instruction    { var i Instruction; i.Set3(e); return i }
+func (e Print) AsInstruction() (i Instruction)   { i.Set0(e); return }
+func (e PushInt) AsInstruction() (i Instruction) { i.Set1(e); return }
+func (e Add) AsInstruction() (i Instruction)     { i.Set2(e); return }
+func (e Exit) AsInstruction() (i Instruction)    { i.Set3(e); return }

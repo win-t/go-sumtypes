@@ -12,7 +12,7 @@ func (s *Type[T0, T1, T2, T3, T4]) Set0(v T0) {
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4]) As0() (T0, bool) {
+func (s Type[T0, T1, T2, T3, T4]) Get0() (T0, bool) {
 	v, ok := s.v.(T0)
 	return v, ok
 }
@@ -21,7 +21,7 @@ func (s *Type[T0, T1, T2, T3, T4]) Set1(v T1) {
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4]) As1() (T1, bool) {
+func (s Type[T0, T1, T2, T3, T4]) Get1() (T1, bool) {
 	v, ok := s.v.(T1)
 	return v, ok
 }
@@ -30,7 +30,7 @@ func (s *Type[T0, T1, T2, T3, T4]) Set2(v T2) {
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4]) As2() (T2, bool) {
+func (s Type[T0, T1, T2, T3, T4]) Get2() (T2, bool) {
 	v, ok := s.v.(T2)
 	return v, ok
 }
@@ -39,7 +39,7 @@ func (s *Type[T0, T1, T2, T3, T4]) Set3(v T3) {
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4]) As3() (T3, bool) {
+func (s Type[T0, T1, T2, T3, T4]) Get3() (T3, bool) {
 	v, ok := s.v.(T3)
 	return v, ok
 }
@@ -48,7 +48,7 @@ func (s *Type[T0, T1, T2, T3, T4]) Set4(v T4) {
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4]) As4() (T4, bool) {
+func (s Type[T0, T1, T2, T3, T4]) Get4() (T4, bool) {
 	v, ok := s.v.(T4)
 	return v, ok
 }

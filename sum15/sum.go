@@ -12,7 +12,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As0() (T0, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get0() (T0, bool) {
 	v, ok := s.v.(T0)
 	return v, ok
 }
@@ -21,7 +21,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As1() (T1, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get1() (T1, bool) {
 	v, ok := s.v.(T1)
 	return v, ok
 }
@@ -30,7 +30,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As2() (T2, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get2() (T2, bool) {
 	v, ok := s.v.(T2)
 	return v, ok
 }
@@ -39,7 +39,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As3() (T3, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get3() (T3, bool) {
 	v, ok := s.v.(T3)
 	return v, ok
 }
@@ -48,7 +48,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As4() (T4, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get4() (T4, bool) {
 	v, ok := s.v.(T4)
 	return v, ok
 }
@@ -57,7 +57,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As5() (T5, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get5() (T5, bool) {
 	v, ok := s.v.(T5)
 	return v, ok
 }
@@ -66,7 +66,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As6() (T6, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get6() (T6, bool) {
 	v, ok := s.v.(T6)
 	return v, ok
 }
@@ -75,7 +75,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As7() (T7, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get7() (T7, bool) {
 	v, ok := s.v.(T7)
 	return v, ok
 }
@@ -84,7 +84,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As8() (T8, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get8() (T8, bool) {
 	v, ok := s.v.(T8)
 	return v, ok
 }
@@ -93,7 +93,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As9() (T9, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get9() (T9, bool) {
 	v, ok := s.v.(T9)
 	return v, ok
 }
@@ -102,7 +102,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As10() (T10, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get10() (T10, bool) {
 	v, ok := s.v.(T10)
 	return v, ok
 }
@@ -111,7 +111,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As11() (T11, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get11() (T11, bool) {
 	v, ok := s.v.(T11)
 	return v, ok
 }
@@ -120,7 +120,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As12() (T12, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get12() (T12, bool) {
 	v, ok := s.v.(T12)
 	return v, ok
 }
@@ -129,7 +129,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As13() (T13, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get13() (T13, bool) {
 	v, ok := s.v.(T13)
 	return v, ok
 }
@@ -138,7 +138,7 @@ func (s *Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) 
 	s.v = v
 }
 
-func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) As14() (T14, bool) {
+func (s Type[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]) Get14() (T14, bool) {
 	v, ok := s.v.(T14)
 	return v, ok
 }

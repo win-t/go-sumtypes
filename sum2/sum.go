@@ -12,7 +12,7 @@ func (s *Type[T0, T1]) Set0(v T0) {
 	s.v = v
 }
 
-func (s Type[T0, T1]) As0() (T0, bool) {
+func (s Type[T0, T1]) Get0() (T0, bool) {
 	v, ok := s.v.(T0)
 	return v, ok
 }
@@ -21,7 +21,7 @@ func (s *Type[T0, T1]) Set1(v T1) {
 	s.v = v
 }
 
-func (s Type[T0, T1]) As1() (T1, bool) {
+func (s Type[T0, T1]) Get1() (T1, bool) {
 	v, ok := s.v.(T1)
 	return v, ok
 }

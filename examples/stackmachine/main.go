@@ -7,15 +7,15 @@ import (
 func main() {
 	instruction, wait := machine.NewMachine()
 
-	instruction <- machine.PushInt{Value: 10}.AsInstruction()
-	instruction <- machine.Print{}.AsInstruction()
+	instruction <- machine.PushInt{Value: 10}
+	instruction <- machine.Print{}
 
-	instruction <- machine.PushInt{Value: 13}.AsInstruction()
-	instruction <- machine.PushInt{Value: 29}.AsInstruction()
-	instruction <- machine.Add{}.AsInstruction()
-	instruction <- machine.Print{}.AsInstruction()
+	instruction <- machine.PushInt{Value: 13}
+	instruction <- machine.PushInt{Value: 29}
+	instruction <- machine.Add{}
+	instruction <- machine.Print{}
 
-	instruction <- machine.Exit{}.AsInstruction()
+	instruction <- machine.Exit{}
 
 	wait()
 }
